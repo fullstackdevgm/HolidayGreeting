@@ -11,13 +11,13 @@ if (!defined("PHP_EOL")) define("PHP_EOL", "\r\n");
 
 $email    = $_POST['email'];
 $phone   = $_POST['phone'];
-$zip_postal = $_POST['zip_postal'];
+//$zip_postal = $_POST['zip_postal'];
 $regimen = $_POST['regimen'];
-$cosmetic = $_POST['cosmetic'];
-$product = $_POST['product'];
-$gender = $_POST['gender'];
-$agegroup = $_POST['agegroup'];
-$name = '';
+//$cosmetic = $_POST['cosmetic'];
+//$product = $_POST['product'];
+//$gender = $_POST['gender'];
+//$agegroup = $_POST['agegroup'];
+//$name = '';
 if(trim($email) == '') {
 	echo '<div class="error_message">Attention! Please enter a valid email address.</div>';
 	exit();
@@ -36,10 +36,10 @@ if(trim($email) == '') {
 }
 
 
-if(trim($zip_postal) == '') {
+/*if(trim($zip_postal) == '') {
 	echo '<div class="error_message">Attention! Please enter Zip / Postal Code.</div>';
 	exit(); 
-}
+}*/
 
 if(get_magic_quotes_gpc()) {
 	$zip_postal = stripslashes($zip_postal);
@@ -66,7 +66,8 @@ $e_subject = 'You\'ve been contacted by ' . $email . '.';
 // Developers, you may wish to add more fields to the form, in which case you must be sure to add them here.
 		
 $e_body = "You have been contacted from $email, their additional message is as follows." . PHP_EOL . PHP_EOL;
-$comments = "Which regimen would you like to receive?$regimen, Mobile number:$phone, Gender:$gender, Age Group:$agegroup, What typical budget do you have a month for cosmetic products?$cosmetic, Which product or products do you find yourself most interested in?$product, Zip/Postal Code:$zip_postal";
+$comments = "";
+//"Which regimen would you like to receive?$regimen, Mobile number:$phone, Gender:$gender, Age Group:$agegroup, What typical budget do you have a month for cosmetic products?$cosmetic, Which product or products do you find yourself most interested in?$product, Zip/Postal Code:$zip_postal";
 $e_content = "\"$comments\"" . PHP_EOL . PHP_EOL;
 $e_reply = "You can contact $email";
 		

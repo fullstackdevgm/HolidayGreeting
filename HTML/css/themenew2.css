@@ -8,7 +8,6 @@
     text-align: center;
     padding: 5px 40px;
     text-transform: uppercase;
-    margin-top: 40px;
     color:white;
     font-size: 14px;
     font-family: 'Playfair Display', serif;
@@ -91,7 +90,7 @@ aside{
 
 .contact 				{display:none;position:absolute;top:0;left:0;z-index:999;width:100%;height:100%;}
 .snow					{display:none;position:fixed;top:0;left:0;width:100%;height:100%;z-index:900;background-color:#eee;background-color:rgba(204, 204, 204, 0.3);background-image: url(../images/bgr/snowflake1.png), url(../images/bgr/snowflake2.png), url(../images/bgr/snowflake3.png);-webkit-animation: snow 20s linear infinite;-moz-animation: snow 20s linear infinite;-o-animation: snow 20s linear infinite;-ms-animation: snow 20s linear infinite;animation: snow 20s linear infinite;}
-.contact  .wrap 	{width:40%;margin:30px auto;background:#fff;padding:25px 40px;border:1px solid #eee;-webkit-box-shadow:0 0 5px rgba(0,0,0,.1);-moz-box-shadow:0 0 5px rgba(0,0,0,.1);box-shadow:0 0 5px rgba(0,0,0,.1);}
+.contact  .wrap 	{width:40%;margin:30px auto;background:#fff;padding:25px 20px;border:1px solid #eee;-webkit-box-shadow:0 0 5px rgba(0,0,0,.1);-moz-box-shadow:0 0 5px rgba(0,0,0,.1);box-shadow:0 0 5px rgba(0,0,0,.1);}
 
 .trees {padding-bottom:20px !important;}
 
@@ -265,8 +264,6 @@ h3 {font-size:16px;}
 
 .contact 				{display:none;position:absolute;top:0;left:0;z-index:999;width:100%;height:100%;}
 .snow					{display:none;position:fixed;top:0;left:0;width:100%;height:100%;z-index:900;background-color:#eee;background-color:rgba(204, 204, 204, 0.3);background-image: url(../images/bgr/snowflake1.png), url(../images/bgr/snowflake2.png), url(../images/bgr/snowflake3.png);-webkit-animation: snow 20s linear infinite;-moz-animation: snow 20s linear infinite;-o-animation: snow 20s linear infinite;-ms-animation: snow 20s linear infinite;animation: snow 20s linear infinite;}
-.contact  .wrap 	{width:40%;margin:30px auto;background:#fff;padding:25px 40px;border:1px solid #eee;-webkit-box-shadow:0 0 5px rgba(0,0,0,.1);-moz-box-shadow:0 0 5px rgba(0,0,0,.1);box-shadow:0 0 5px rgba(0,0,0,.1);}
-
 
 
 @media screen and (max-width: 1200px) {
